@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Noto+Sans:wght@500&family=Silkscreen&display=swap');
+header {display: inline;}
+* {box-sizing: border-box;}
+.jumbotron {
+    text-align: center;
+    background-color: #94B49F;
+    padding: 60px;
+    font-family: 'Silkscreen', cursive;
+}
+
+nav {
+    background-color: #CEE5D0;
+    top: 0;
+    padding: 1px;
+    text-align: center;
+    position: sticky;
+}
+nav a {
+    font-size: 20px;    
+    text-decoration: none;
+    color: #2C3333;
+    font-family: 'DynaPuff', cursive;
+}
+a:hover {font-weight: bold;}
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+#kiriNav {margin-right: 900px;}
+#kananNav {margin-right: 30px;}
+main {
+    padding: 20px;
+    overflow: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+p h1{font-family: 'Noto Sans', sans-serif;}
+.introductions {text-align: center;}
+.introductions > article {
+    line-height: 2em;
+    text-align: justify;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.introductions > img {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+}
+.car {text-align: center;}
+.car > img {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+}
+.car > p {
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.kontenKiri {
+    float: left;
+    width: 70%;
+    overflow: auto;
+    min-width: none;
+}
+.biodata  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+}
+.biodata {
+    text-align: center;
+    margin-left: 30px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+#kananBio {
+    padding-left: 10px;
+    float: right;
+    width: 60%;
+    text-align: left;
+    background-color: #82DBD8;
+    border-radius: 0px 5px 5px 0px;
+}
+#kiriBio {
+    padding-left: 10px;
+    float: left;
+    width: 40%;
+    text-align: left;
+    background-color: #3BACB6;
+    border-radius: 5px 0px 0px 5px;
+    font-weight: bold;
+}
+aside {
+    float: right;
+    width: 30%;
+}
+.dropButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+.dropdown {
+    display: inline-block;
+    margin-left: 50px;
+}
+#kontenDropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+}
+#kontenDropdown p {
+    color: black;
+    padding: 12px 16px;
+}
+#kontenDropdown p:hover {background-color: #f1f1f1;}
+.dropdown:hover #kontenDropdown {display: block;}
+footer {
+    background-color: #94B49F;
+    padding: 1px 5px;
+    text-align: center;
+}
+.clear {clear: both;}
+@media screen and (max-width: 2561px) {
+    #kananNav a, #kiriNav  a{font-size: 25px;}
+    .introductions article {
+        font-size: 25px;
+    }
+    #kontenDropdown > p {
+        font-size: 22px;
+    }
+    #penjelasan {
+        font-size: 22px;
+    }
+    footer {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1441px) {
+        #kontenDropdown  p {
+            font-size: 10px;
+        }
+
+        @media screen and (max-width: 1291px) {
+            #kiriBio {
+                padding-bottom: 18.5px;
+            }
+    
+            @media screen and (max-width: 1249px) {
+                #kiriBio {
+                    padding-bottom: 0px;
+                }
+    
+                @media screen and (max-width: 1200px) {
+                    .kontenKiri,
+                    aside {
+                        width: 100%;
+                    }
+                    .biodata {
+                        margin-right: 30px;
+                    }
+                    #kiriNav {
+                        margin-right: 700px;
+                    }
+                    #kananNav {
+                        margin-right: 80px;
+                    }
+    
+                    @media screen and (max-width: 1013px ) {
+                        #kiriNav {
+                            margin-right: 600px;
+                        }
+                        #kananNav {
+                            margin-right: 60px;
+                        }
+    
+                        @media screen and (max-width: 893px ) {
+                            #kananNav {
+                                margin-right: 60px;
+                            }
+                            #kiriNav {
+                                margin-right: 400px;
+                            }
+                            .introductions > img {
+                                width: 400px;
+                                height: 400px;
+                            }
+                            .introductions article {
+                                font-size: 18px;
+                            }
+                            #kontenDropdown > p {
+                                font-size: 15px;
+                            }
+                            #penjelasan {
+                                font-size: 18px;
+                            }
+    
+                            @media screen and (max-width: 693px ) {
+                                #kananNav {
+                                    margin-right: 100px;
+                                }
+                                #kiriNav {
+                                    margin-right: 300px;
+                                }
+                                .introductions > article {
+                                    margin-right: 90px;
+                                    margin-left: 90px;
+                                }
+    
+                                @media screen and (max-width: 633px ) {
+                                    #kananNav {margin-right: 110px;}
+                                    #kiriNav {margin-right: 250px;}
+        
+                                    @media screen and (max-width: 426px ) {
+                                        .jumbotron > h1 {font-size: 18px;}
+                                        #kiriNav a, #kananNav a {font-size: 16px;}
+                                        #kananNav {margin-right: 90px;}
+                                        #kiriNav {margin-right: 90px;}
+                                        .introductions img {width: 200px; height: 100px;}
+                                        .introductions article {margin-right: 15px;margin-left: 15px;}
+                                        #gambar {width: 190px; height: 130px;}
+                                        .car > p {margin-left: 15px; margin-right: 15px;}
+        
+                                        @media screen and (max-width: 376px) {
+                                            .jumbotron > h1 {font-size: 17px;}
+                                            #kananNav {margin-right: 50px;}
+                                            #kiriNav {margin-right: 90px;}
+        
+                                            @media screen and (max-width: 321px) {
+                                                .jumbotron > h1 {font-size: 13px;}
+                                                #kananNav {margin-right: 50px;}
+                                                #kiriNav {margin-right: 50px;}
+                                                .biodata img {
+                                                    width: 90px; height: 90px;
+                                                }
+                                                #kiriBio, #kananBio {font-size: 10px;}
+                                                footer {font-size: 10px;}
+                                                .dropdown {margin-right: 70px;}
+                                                #item {font-size: 15px;}
+                                                #kontenDropdown p {
+                                                    padding: 0px 5px;
+                                                }
+                                                .dropdown {margin-left: 0px;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
